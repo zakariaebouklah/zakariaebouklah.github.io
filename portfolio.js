@@ -5,15 +5,12 @@ $(document).ready(function () {
     const sectBtn = $('.control');
     const allSections = $('section');
 
-    console.log(typeof(sectBtn))
-
     function PageTransitions() {
 
         sectBtn.each(function () {
             $(this).on('click', function(){
                 $('.active-btn').removeClass('active-btn');
                 this.className += ' active-btn';
-                // console.log($(this).data('id'))
                 sections.removeClass('active')
 
                 let id = $(this).data('id')
@@ -24,9 +21,6 @@ $(document).ready(function () {
                 }
             })  
         })
-    
-        console.log(allSections)
-    
         
     }
     
