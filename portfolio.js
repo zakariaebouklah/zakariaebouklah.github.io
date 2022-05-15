@@ -39,5 +39,13 @@ $(document).ready(function () {
         });
     }
 
+    // dark-light mode
+    const themeCtrl = document.querySelector(".themes");
+    themeCtrl.addEventListener('click',() => {
+        let element = document.body;
+        element.classList.toggle('light-mode');
+    });
+
+
 });
 

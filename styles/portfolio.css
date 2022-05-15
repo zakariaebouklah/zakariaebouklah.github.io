@@ -22,6 +22,22 @@
   --box-shadow-1: 0 3px 15px rgba(255, 0, 0, 0.978);
 }
 
+.light-mode {
+  --color-primary: #F0FFF0;
+  --color-secondary: #009000;
+  --color-white: #000;
+  --color-black: #fff;
+  --color-org-0: #f8f8f8;
+  --color-org-1: #f5c8bf;
+  --color-org-2: #004953;
+  --color-org-3: #ed8c79;
+  --color-org-4: #c46552;
+  --color-org-5: #f52c3a;
+  --color-org-6: #40e0d0;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgb(64,224,208,0.978);
+}
+
 body {
   background-color: var(--color-primary);
   font-family: 'Quicksand', sans-serif;
@@ -122,7 +138,7 @@ section {
 .controls {
   position: fixed;
   z-index: 10;
-  top: 50%;
+  top: 65%;
   right: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -154,7 +170,7 @@ section {
 .controls .ctrl {
   padding: 1rem;
   cursor: pointer;
-  background-color: #ffbcaf;
+  background-color: var(--color-org-2);
   width: 55px;
   height: 55px;
   border-radius: 50%;
@@ -181,6 +197,44 @@ section {
 }
 
 .controls .ctrl:hover {
+  -webkit-transform: translateX(9px);
+          transform: translateX(9px);
+}
+
+.themes {
+  position: fixed;
+  z-index: 10;
+  top: 7%;
+  right: 3%;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--color-org-2);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: .7rem 0;
+  -webkit-box-shadow: var(--box-shadow-1);
+          box-shadow: var(--box-shadow-1);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.themes i {
+  font-size: 1.2rem;
+  color: var(--color-org-6);
+  pointer-events: none;
+}
+
+.themes:hover {
   -webkit-transform: translateX(9px);
           transform: translateX(9px);
 }
@@ -526,7 +580,7 @@ section {
 
 .main-btn .btn-icon {
   color: var(--color-org-6);
-  background-color: var(--color-secondary);
+  background-color: var(--color-org-2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,6 +620,11 @@ section {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   background-color: var(--color-primary);
+}
+
+.image {
+  height: 560px;
+  width: 288px;
 }
 
 .main-title {
