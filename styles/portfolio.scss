@@ -7,18 +7,13 @@
     
   :root {
     --color-primary: #191d2b;
-    --color-secondary: #ff795f;
+    --color-secondary: #8a2be2;
     --color-white: #fff;
     --color-black: #000;
-    --color-org-0: #f8f8f8;
-    --color-org-1: #f5c8bf;
-    --color-org-2: #ffbcaf;
-    --color-org-3: #ed8c79;
-    --color-org-4: #c46552;
-    --color-org-5: #f52c3a;
-    --color-org-6: #ba000d;
+    --color-org-2: #7851a9;
+    --color-org-6: #180331;
     --br-sm-2: 14px;
-    --box-shadow-1: 0 3px 15px rgba(255, 0, 0, 0.978);
+    --box-shadow-1: 0 3px 15px rgba(158, 116, 219, 0.978);
   }
 
   .light-mode {
@@ -26,12 +21,7 @@
     --color-secondary: #009000;
     --color-white: #000;
     --color-black: #fff;
-    --color-org-0: #f8f8f8;
-    --color-org-1: #f5c8bf;
     --color-org-2: #004953;
-    --color-org-3: #ed8c79;
-    --color-org-4: #c46552;
-    --color-org-5: #f52c3a;
     --color-org-6: #40e0d0;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgb(64,224,208,0.978);
@@ -511,4 +501,7 @@
   .progress-title > p {
     display: inline-block;
   }
-  
+ 
+//media queries
+
+@import url(media_queries.css);
